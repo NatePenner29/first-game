@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://b5a13kchqifn"]
+
+[ext_resource type="Texture2D" uid="uid://gt1nrjx352rl" path="res://assets/SPRITE_SHEET.png" id="1_0nt2d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uy3ls"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6tgx"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(32, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxs0k"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(64, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_chng6"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(96, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3lhp"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(128, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rhkc6"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(160, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_657c4"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(192, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksr0o"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(224, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmwi1"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(256, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6fq6"]
+atlas = ExtResource("1_0nt2d")
+region = Rect2(288, 192, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oahat"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uy3ls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6tgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxs0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_chng6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3lhp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rhkc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_657c4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksr0o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bmwi1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6fq6")
+}],
+"loop": true,
+"name": &"player death effect",
+"speed": 10.0
+}]
+
+[node name="PlayerDeathEffect" type="Node2D" unique_id=199546466]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=407322327]
+sprite_frames = SubResource("SpriteFrames_oahat")
+animation = &"player death effect"
+autoplay = "player death effect"
+frame_progress = 0.8246137

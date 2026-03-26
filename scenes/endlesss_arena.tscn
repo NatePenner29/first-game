@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://pl64tdvjay1q"]
+
+[ext_resource type="Script" uid="uid://ciclvs7fg0mbo" path="res://endlesss_arena.gd" id="1_xycgh"]
+[ext_resource type="PackedScene" uid="uid://dt3qo1evykosf" path="res://scenes/skelett.tscn" id="2_jnrmb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jnrmb"]
+size = Vector2(251, 656)
+
+[node name="EndlesssArena" type="Node2D" unique_id=1306224409]
+script = ExtResource("1_xycgh")
+enemy_scene = ExtResource("2_jnrmb")
+
+[node name="Trigger" type="Area2D" parent="." unique_id=1633055883]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger" unique_id=302751379]
+position = Vector2(5.5, -44)
+shape = SubResource("RectangleShape2D_jnrmb")
+
+[node name="SpawnPoints" type="Node2D" parent="." unique_id=1890165781]
+
+[node name="Point1" type="Node2D" parent="SpawnPoints" unique_id=2120447082]
+
+[node name="Point2" type="Node2D" parent="SpawnPoints" unique_id=2118106897]
+
+[node name="Point3" type="Node2D" parent="SpawnPoints" unique_id=119794695]
+
+[node name="Point4" type="Node2D" parent="SpawnPoints" unique_id=1782264671]
+
+[node name="Point5" type="Node2D" parent="SpawnPoints" unique_id=120563072]
+
+[node name="Point6" type="Node2D" parent="SpawnPoints" unique_id=516670323]
+
+[node name="Point7" type="Node2D" parent="SpawnPoints" unique_id=2084848855]
+
+[node name="Point8" type="Node2D" parent="SpawnPoints" unique_id=728605112]
+
+[node name="Point9" type="Node2D" parent="SpawnPoints" unique_id=561140137]
+
+[node name="Point10" type="Node2D" parent="SpawnPoints" unique_id=54839316]
+
+[node name="Point11" type="Node2D" parent="SpawnPoints" unique_id=1292592546]
+
+[node name="Point12" type="Node2D" parent="SpawnPoints" unique_id=2095594998]
+
+[node name="Point13" type="Node2D" parent="SpawnPoints" unique_id=718722295]
+
+[node name="Point14" type="Node2D" parent="SpawnPoints" unique_id=1950678372]
+
+[node name="Point15" type="Node2D" parent="SpawnPoints" unique_id=1266258175]

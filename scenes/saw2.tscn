@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dhumnl8001j8p"]
+
+[ext_resource type="Script" uid="uid://cvday8ok68yqx" path="res://saw.gd" id="1_3rqbh"]
+[ext_resource type="Texture2D" uid="uid://bpekw1d00f6ey" path="res://assets/Free/Traps/Saw/Off.png" id="2_5h51y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b5rph"]
+radius = 20.024984
+
+[node name="Saw" type="Node" unique_id=1576005221]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1526931989]
+script = ExtResource("1_3rqbh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=563819188]
+texture = ExtResource("2_5h51y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=175984322]
+shape = SubResource("CircleShape2D_b5rph")
+
+[node name="PointA" type="Marker2D" parent="." unique_id=1743646571]
+position = Vector2(1, 0)
+
+[node name="PointB" type="Marker2D" parent="." unique_id=2014312186]
+position = Vector2(134, 0)

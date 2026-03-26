@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://6bevqayejp23"]
+
+[ext_resource type="AudioStream" uid="uid://c7jrlxqb5rkg3" path="res://assets/music/alexgrohl-neon-city-bright-vision-184237.mp3" id="1_lgqop"]
+
+[node name="Music" type="AudioStreamPlayer2D" unique_id=364488653]
+stream = ExtResource("1_lgqop")
+autoplay = true

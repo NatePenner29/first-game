@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://76g1s1vgcjwc"]
+
+[ext_resource type="Script" uid="uid://m4ugmupydjqn" path="res://chain.gd" id="1_dpabu"]
+[ext_resource type="Texture2D" uid="uid://us7s3c1qbky1" path="res://assets/Free/Traps/Spiked Ball/Chain.png" id="2_17kw6"]
+[ext_resource type="Script" uid="uid://de23ehajnsqum" path="res://spikeball.gd" id="3_xjadq"]
+[ext_resource type="Texture2D" uid="uid://dvt5le2q3o8ss" path="res://assets/Free/Traps/Spiked Ball/Spiked Ball.png" id="4_ssxmy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w7fjv"]
+radius = 13.0
+
+[node name="SpikeballChain" type="Node2D" unique_id=1473051960]
+script = ExtResource("1_dpabu")
+
+[node name="ChainRoot" type="Marker2D" parent="." unique_id=930498948]
+
+[node name="ChainLink1" type="Sprite2D" parent="." unique_id=1822699331]
+position = Vector2(-20, -51)
+texture = ExtResource("2_17kw6")
+
+[node name="ChainLink2" type="Sprite2D" parent="." unique_id=1705626707]
+position = Vector2(-20, -42)
+scale = Vector2(1.125, 1)
+texture = ExtResource("2_17kw6")
+
+[node name="ChainLink3" type="Sprite2D" parent="." unique_id=2075472741]
+position = Vector2(-20, -34)
+texture = ExtResource("2_17kw6")
+
+[node name="ChainLink4" type="Sprite2D" parent="." unique_id=54075220]
+position = Vector2(-21, -25)
+texture = ExtResource("2_17kw6")
+
+[node name="ChainLink5" type="Sprite2D" parent="." unique_id=271265625]
+position = Vector2(-23, -16)
+texture = ExtResource("2_17kw6")
+
+[node name="Spikeball" type="Area2D" parent="." unique_id=1688951537]
+position = Vector2(17, 1)
+collision_mask = 2
+script = ExtResource("3_xjadq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Spikeball" unique_id=752189796]
+position = Vector2(-24, 10)
+texture = ExtResource("4_ssxmy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spikeball" unique_id=1100302304]
+position = Vector2(-23, 10)
+shape = SubResource("CircleShape2D_w7fjv")
+
+[connection signal="body_entered" from="Spikeball" to="Spikeball" method="_on_body_entered"]

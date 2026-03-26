@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://c5fh5qrotijj3"]
+
+[ext_resource type="Script" uid="uid://764xwi2gjqh1" path="res://arena.gd" id="1_e05a3"]
+[ext_resource type="PackedScene" uid="uid://dt3qo1evykosf" path="res://scenes/skelett.tscn" id="2_olpmc"]
+[ext_resource type="PackedScene" uid="uid://du5n2aqkl3adw" path="res://scenes/Door.tscn" id="3_xdvfk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wl4x5"]
+size = Vector2(115, 283)
+
+[node name="Arena" type="Node2D" unique_id=119063668]
+script = ExtResource("1_e05a3")
+enemy_scene = ExtResource("2_olpmc")
+
+[node name="Trigger" type="Area2D" parent="." unique_id=891580938]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger" unique_id=1194162419]
+shape = SubResource("RectangleShape2D_wl4x5")
+
+[node name="DoorTop" type="Node2D" parent="." unique_id=466582688]
+
+[node name="DoorTop" parent="DoorTop" unique_id=57478064 instance=ExtResource("3_xdvfk")]
+position = Vector2(188, 47)
+
+[node name="DoorTop2" parent="DoorTop" unique_id=1120924696 instance=ExtResource("3_xdvfk")]
+position = Vector2(188, 47)
+
+[node name="DoorBottom" type="Node2D" parent="." unique_id=30669314]
+
+[node name="DoorBottom" parent="DoorBottom" unique_id=927144235 instance=ExtResource("3_xdvfk")]
+position = Vector2(189, 88)
+
+[node name="DoorBottom2" parent="DoorBottom" unique_id=139404873 instance=ExtResource("3_xdvfk")]
+position = Vector2(189, 88)
+
+[node name="SpawnPoints" type="Node2D" parent="." unique_id=1572814882]
+
+[node name="Spawn1" type="Marker2D" parent="SpawnPoints" unique_id=1451913907]
+
+[node name="Spawn2" type="Marker2D" parent="SpawnPoints" unique_id=510071598]
+position = Vector2(77, 0)
+
+[node name="Spawn3" type="Marker2D" parent="SpawnPoints" unique_id=271916743]
+position = Vector2(-48, 0)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lsch3avxq5h6"
+path="res://.godot/imported/alexgrohl-neon-city-bright-vision-184237.mp3-1f19ee57828461f3fd2b541a278fcef8.mp3str"
+
+[deps]
+
+source_file="res://assets/Mossy Tileset/alexgrohl-neon-city-bright-vision-184237.mp3"
+dest_files=["res://.godot/imported/alexgrohl-neon-city-bright-vision-184237.mp3-1f19ee57828461f3fd2b541a278fcef8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

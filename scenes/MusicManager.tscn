@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://pf3hlksg6m28"]
+
+[ext_resource type="AudioStream" uid="uid://c7jrlxqb5rkg3" path="res://assets/music/alexgrohl-neon-city-bright-vision-184237.mp3" id="1_k17rw"]
+[ext_resource type="Script" uid="uid://cunm36wp8dpqs" path="res://scenes/music_manager.gd" id="1_mvbrv"]
+
+[node name="Music" type="Node" unique_id=867626100]
+script = ExtResource("1_mvbrv")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=627615836]
+stream = ExtResource("1_k17rw")
+parameters/looping = true
